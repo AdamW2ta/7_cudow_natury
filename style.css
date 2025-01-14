@@ -1,0 +1,575 @@
+* {
+    font-family: Helvetica;
+}
+
+body.gradient, body.mainsite {
+    background-image: linear-gradient(45deg, lightgreen, deepskyblue);
+}
+
+
+@media screen and (max-width: 600px) {
+    body.mainsite {
+        height: 99vh;
+    }
+
+    header.mainsite {
+        font-size: 110%;
+    }
+
+    p.tekst {
+        text-align: center;
+    }
+
+    nav.mainsite {
+        width: 30%;
+        height: 78vh;
+        animation-name: menu;
+        animation-duration: 2.5s;
+        position: relative;
+        left: -100vw;
+        top: 0px;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.16,.85,.93,.96);
+        float: left;
+        font-size: 2.3vh;
+    }
+
+    @keyframes menu {
+        from {
+            left: -100vw;
+        }
+        to {
+            left: 0vw;
+        }
+    }
+
+    main.mainsite {
+        height: 78vh;
+        width: 70%;
+        float: left;
+        animation-name: tresc;
+        animation-duration: 2.5s;
+        animation-timing-function: cubic-bezier(.16,.85,.93,.96);
+        animation-fill-mode: forwards;
+        position: relative;
+        right: -70%;
+        top: 0px;
+    }
+
+    @keyframes tresc {
+        from {
+            right: -70%;
+        }
+        to {
+            right: 0px;
+        }
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    article.iframe {
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    div.galeria, iframe.film {
+        width: 90%;
+        height: 60vw;
+        margin: 0 5%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1199px) {
+    nav.mainsite {
+        float: right;
+        height: 80vh;
+        width: 25%;
+        font-size: 2.4vh;
+    }
+
+    footer {
+        font-size: 140%;
+    }
+
+    header.mainsite {
+        height: 5vh;
+    }
+
+    main.mainsite {
+        height: 80vh;
+        width: 75%;
+    }
+
+    header.mainsite {
+        font-size: 140%;
+    }
+
+    .hidden_tablet {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 439px) and (max-width: 888px) {
+    header.iframe, h3.iframe {
+        font-size: 160%;
+    }
+
+    p.tekst {
+        text-align: center;
+    }
+
+    article.iframe {
+        line-height: 30px;
+        text-align: justify;
+    }    
+
+    div.tekst, p.tekst {
+        font-size: 150%;
+    }
+
+    a.podstrony, a.poczatek {
+        font-size: 140%;
+    }
+
+    ol {
+        font-size: 150%;
+    }
+
+    ul {
+        list-style-position: inside;
+    }
+
+    li {
+        margin-bottom: 25px;
+    }
+
+    div.galeria {
+        width: 90%;
+        height: 55vw;
+        margin: 0 5%;
+    }
+
+    #nothidden_tabela {
+        display: initial;
+    }
+
+    .hidden_inne {
+        display: none;
+    }
+
+    input.text, select.text, textarea {
+        width: 45%;
+        font-size: 90%;
+    }
+    
+    textarea {
+        width: 40%;
+        height: 20vh;
+    }
+    
+    button {
+        margin-right: 2%;
+        font-size: 100%;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    header.mainsite_pc, header.mainsite {
+        font-size: 170%;
+    }
+
+    header.mainsite_pc {
+        animation-name: logo;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        height: 10vh;
+        width: 100vw;
+        background-color: blue;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .hidden_pc {
+        display: none;
+    }
+
+    nav.mainsite_pc {
+        background-color: rgb(0, 255, 200);
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        width: 100vw;
+        font-size: 2.3vh;
+        animation-name: nawigacja;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+    }
+
+    @keyframes nawigacja {
+        from {
+            font-size: 0px;
+            background-color: rgba(0, 255, 200, 0);
+        }
+        to {
+            font-size: 2.3vh;
+            background-color: rgba(0, 255, 200, 1);
+        }
+    }
+
+    a.link {
+        color: black;
+        padding: 1vh;
+        border-radius: 20px;
+        line-height: 3vh;
+        white-space: nowrap;
+    }
+
+    a.link:hover {
+        background-color: rgba(0, 200, 255, 0.3);
+    }
+
+    footer {
+        font-size: 160%;
+    }
+
+    main.pc {
+        width: 100vw;
+        height: 61vh;
+        text-align: center;
+        font-size: 170%;
+    }
+
+    div.tekst, a.podstrony, a.poczatek, td, th, ol, label {
+        font-size: 200%;
+    }
+
+    li {
+        margin-bottom: 30px;
+    }
+
+    ul {
+        list-style-position: inside;
+    }
+
+    h3 {
+        font-size: 250%;
+    }
+
+    h2 {
+        font-size: 400%;
+    }
+
+    div.galeria {
+        width: 50%;
+        height: 35vw;
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+
+    .active-site {
+        background-color: rgba(0, 200, 255, 1);;
+    }
+
+    .pc {
+        font-size: 160%;
+    }
+
+    iframe.mapa {
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    iframe.film {
+        width: 50%;
+        height: 30vw;
+        margin: 0 25%;
+    }
+
+    input.text, select.text {
+        width: 20%;
+        font-size: 200%;
+    }
+    
+    textarea {
+        width: 30%;
+        height: 20vh;
+        font-size: 200%;
+    }
+    
+    button {
+        margin-right: 2%;
+        font-size: 200%;
+        padding: 10px;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+#formularz {
+    font-size: 140%;
+}
+
+header.mainsite {
+    animation-name: logo;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    height: 10vh;
+    width: 100vw;
+    background-color: blue;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+@keyframes logo {
+    from {
+        background-color: blue
+    }
+    to {
+        background-color: lightskyblue;
+        border-radius: 30px;
+        box-shadow: inset 0px 0px 20px 12px white;
+    }
+
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+div.galeria {
+    border: none;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+
+#zorza_galeria {
+    animation-name: zorza-galeria;
+    background-image: url(multimedia/zorza/zorza_polarna.jpg);
+}
+
+@keyframes zorza-galeria {
+    0% {
+        background-image: url(multimedia/zorza/zorza_polarna.jpg);
+    }
+    33% {
+        background-image: url(multimedia/zorza/zorza_polarna2-2.jpg);
+    }
+    66% {
+        background-image: url(multimedia/zorza/zorza_polarna3.jpg);
+    }
+}
+
+#kanion-galeria {
+    animation-name: kanion-galeria;
+    background-image: url(multimedia/kanion/wielki_kanion.jpg);
+}
+
+@keyframes kanion-galeria {
+    0% {
+        background-image: url(multimedia/kanion/wielki_kanion.jpg);
+    }
+    33% {
+        background-image: url(multimedia/kanion/wielki_kanion2.jpg);
+    }
+    66% {
+        background-image: url(multimedia/kanion/wielki_kanion3.jpg);
+    }
+}
+
+#rafa-galeria {
+    animation-name: rafa-galeria;
+    background-image: url(multimedia/rafa/rafa_koralowa.jpg);
+}
+
+@keyframes rafa-galeria {
+    0% {
+        background-image: url(multimedia/rafa/rafa_koralowa.jpg);
+    }
+    33% {
+        background-image: url(multimedia/rafa/rafa_koralowa2.jpg);
+    }
+    66% {
+        background-image: url(multimedia/rafa/rafa_koralowa3-2.jpg);
+    }
+}
+
+#port-galeria {
+    animation-name: port-galeria;
+    background-image: url(multimedia/port/port_rio.jpg);
+}
+
+@keyframes port-galeria {
+    0% {
+        background-image: url(multimedia/port/port_rio.jpg);
+    }
+    33% {
+        background-image: url(multimedia/port/port_rio2.jpg);
+    }
+    66% {
+        background-image: url(multimedia/port/port_rio3.jpg);
+    }
+}
+
+#paricutin_galeria {
+    animation-name: paricutin-galeria;
+    background-image: url(multimedia/paricutin/paricutin-2.jpg);
+    background-position: -40px;
+}
+
+@keyframes paricutin-galeria {
+    0% {
+        background-image: url(multimedia/paricutin/paricutin-2.jpg);
+    }
+    33% {
+        background-image: url(multimedia/paricutin/paricutin2-2.jpg);
+    }
+    66% {
+        background-image: url(multimedia/paricutin/paricutin3-2.jpg);
+    }
+}
+
+#everest_galeria {
+    animation-name: everest-galeria;
+    background-image: url(multimedia/everest/everest-2.jpg);
+}
+
+@keyframes everest-galeria {
+    0% {
+        background-image: url(multimedia/everest/everest-2.jpg);
+    }
+    33% {
+        background-image: url(multimedia/everest/everest2.jpg);
+    }
+    66% {
+        background-image: url(multimedia/everest/everest3.jpg);
+    }
+}
+
+#wodospady_galeria {
+    animation-name: wodospady-galeria;
+    background-image: url(multimedia/wodospady/wodospady_wiktorii.jpg);
+}
+
+@keyframes wodospady-galeria {
+    0% {
+        background-image: url(multimedia/wodospady/wodospady_wiktorii.jpg);
+    }
+    33% {
+        background-image: url(multimedia/wodospady/wodospady_wiktorii4-2.jpg);
+    }
+    66% {
+        background-image: url(multimedia/wodospady/wodospady_wiktorii3.jpg);
+    }
+}
+
+nav.podstrony {
+    width: 100vw;
+    height: 25px;
+    font-size: 18px;
+    text-align: center;
+    word-spacing: 20px;
+    background-color: grey;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+nav.mainsite {
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+.link {
+    color: #565656;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(0, 200, 255);
+    height: 9vh;
+    width: 100vw;
+    clear: both;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a.paricutin_link {
+    color: darkmagenta;
+}
+
+a.podstrony {
+    color: white;
+    text-decoration: none;
+}
+
+a.poczatek {
+    color: purple;
+    text-decoration: overline;
+}
+
+iframe.mapa {
+    height: 50vh;
+}
+
+h2, h3.iframe {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+th {
+    background-color: rgb(0, 150, 255);
+}
+
+.parzyste {
+    background-color: rgb(0, 255, 200);
+}
+
+.nieparzyste {
+    background-color: rgb(0, 200, 255);
+}
+
+table {
+    width: 100%;
+    border: 4px solid black;
+    border-collapse: collapse;
+    font-size: 120%;
+}
+
+td, th {
+    border: 4px solid black;
+    padding: 10px;
+}
+
+.wyrownanie{
+    text-align: center;
+}
+
+#zewnetrzny {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.main_link {
+    text-decoration: none;
+    color: inherit;
+}
